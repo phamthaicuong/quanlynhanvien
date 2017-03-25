@@ -22,4 +22,7 @@
 
        return view('about',compact('bitfumes'));
  });
+ Route::group(array('prefix'=>'admin'), function(){
+ 	Route::get('/','admin\HomeController@showWelcome');
+ });
 
