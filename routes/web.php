@@ -22,7 +22,61 @@
 
        return view('about',compact('bitfumes'));
  });
- Route::group(array('prefix'=>'admin'), function(){
- 	Route::get('/','admin\HomeController@showWelcome');
+
+ Route::group(['prefix'=>'admin'], function(){
+ 	Route::group(['prefix'=>'quanlyhoso'], function(){
+ 		//admin/quanlyhoso/danhsach
+ 		Route::get('danhsach','QuanLyHoSoController@getDanhSach');
+ 		
+ 		Route::get('sua','QuanLyHoSoController@getSua');
+ 		
+ 		Route::get('them','QuanLyHoSoController@getThem');
+  	});
+
+  	Route::group(['prefix'=>'quanlyluong'], function(){
+  		//admin/quanlyluong/danhsach
+ 		Route::get('danhsach','QuanLyLuongController@getDanhSach');
+
+ 		Route::get('sua','QuanLyLuongController@getSua');
+
+ 		Route::get('them','QuanLyLuongController@getThem');
+  	});
+
+  	Route::group(['prefix'=>'timkiemthongtin'], function(){
+  		//admin/timkiemthongtin/danhsach
+ 		Route::get('danhsach','TimKiemThongTinController@getDanhSach');
+
+ 		Route::get('sua','TimKiemThongTinController@getSua');
+
+ 		Route::get('them','TimKiemThongTinController@getThem');
+  	});
+
+  	Route::group(['prefix'=>'user'], function(){
+  		//admin/user/danhsach
+ 		Route::get('danhsach','UserController@getDanhSach');
+
+ 		Route::get('sua','UserController@getSua');
+
+ 		Route::get('them','UserController@getThem');
+  	});
+
+  	Route::group(['prefix'=>'baocao'], function(){
+  		//admin/baocao/danhsach
+ 		Route::get('danhsach','BaoCaoController@getDanhSach');
+
+ 		Route::get('sua','BaoCaoController@getSua');
+
+ 		Route::get('them','BaoCaoController@getThem');
+  	});
+  });
+
+ Route::get('/', function(){
+  	return view('login');
  });
+
+ Route::get('index', function(){
+    return view('admin.layout.index');
+ });
+
+
 
