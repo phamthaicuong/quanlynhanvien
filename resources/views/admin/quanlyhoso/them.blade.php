@@ -6,8 +6,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
-                    <small>Add</small>
+                <h1 class="page-header">Them Nhan Vien
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -18,10 +17,10 @@
                     </div>
                     <div class="form-group">
                         <label>Ho va ten</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Ngay sinh</label>
+                        <label>Sinh Ngay</label>
                         <div class="clearfix"></div>
                         <div class="col-xs-3">
                             <select class="form-control" name="birthday">
@@ -117,7 +116,7 @@
 
                     <div class="form-group">
                         <label>Dan toc</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Gioi tinh</label>
@@ -130,23 +129,23 @@
                     </div>
                     <div class="form-group">
                         <label>So Dien Thoai</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="0123456789" />
                     </div>
                     <div class="form-group">
                         <label>Que quan</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Dia chi hien tai</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>So CMND</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Ma phong ban</label>
-                        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" />
+                        <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Muc luong</label>
@@ -162,21 +161,8 @@
                             <option value="">Tren 40tr</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label>Category Order</label>
-                        <input class="form-control" name="txtOrder" placeholder="Please Enter Category Order" />
-                    </div>
-                    <div class="form-group">
-                        <label>Category Keywords</label>
-                        <input class="form-control" name="txtOrder" placeholder="Please Enter Category Keywords" />
-                    </div>
-                    <div class="form-group">
-                        <label>Category Description</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-default">Category Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Them Vao</button>
+                    <button type="reset" class="btn btn-default">Thu Lai</button>
                 <form>
             </div>
         </div>

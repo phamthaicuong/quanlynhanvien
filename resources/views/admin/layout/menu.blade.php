@@ -19,10 +19,13 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quan ly ho so<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="#">List</a>
+                        <a href="admin/quanlyhoso/danhsach">Danh Sach</a>
                     </li>
                     <li>
-                        <a href="#">Add</a>
+                        <a href="admin/quanlyhoso/them">Them Ho So</a>
+                    </li>
+                    <li>
+                        <a href="admin/quanlyhoso/sua">Chinh Sua Ho So</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
@@ -34,7 +37,7 @@
                         <a href="#">Tong luong</a>
                     </li>
                     <li>
-                        <a href="#">Muc luong</a>
+                        <a href="#">Bac luong</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
