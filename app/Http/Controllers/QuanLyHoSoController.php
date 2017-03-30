@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\QuanLyHoSo;
+
 class QuanLyHoSoController extends Controller
 {
     public function getDanhSach()
     {
-    	return view('admin.quanlyhoso.danhsach');
+        $quanlyhoso = QuanLyHoSo::all();
+    	return view('admin.quanlyhoso.danhsach',['quanlyhoso'=>$quanlyhoso]);
     }
 
     public function getThem()

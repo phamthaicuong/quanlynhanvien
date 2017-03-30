@@ -14,14 +14,9 @@
  Route::get('/', function () {
        return view('welcome');
   });
- Route::get('/','homeController@index');
 
- Route::get('about', function ()
-  {
-  	$bitfumes = [];
-
-       return view('about',compact('bitfumes'));
- });
+ Route::get('admin/dangnhap','UserController@getDangNhapAdmin');
+ Route::post('admin/dangnhap','UserController@postDangNhapAdmin');
 
  Route::group(['prefix'=>'admin'], function(){
  	Route::group(['prefix'=>'quanlyhoso'], function(){

@@ -4,6 +4,6 @@ Route::get('/',function(){
 });
 
 
-View::share('name','laravel-khoapham');
+View::share('name','laravel');
 
  ?>

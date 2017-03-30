@@ -272,9 +272,12 @@ class ComposerStaticInitae6b08ae92f5a37c236fa72423ac210e
     );
 
     public static $classMap = array (
-        'Case' => __DIR__ . '/../..' . '/database/migrations/2017_03_24_034619_case.php',
-        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CreateChucvuTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_095929_create_chucvu_table.php',
+        'CreateLuongTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_094803_create_luong_table.php',
+        'CreateNhanvienTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_092856_create_nhanvien_table.php',
+        'CreatePhongbanTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_094820_create_phongban_table.php',
+        'CreateStaffsTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_092135_create_staffs_table.php',
+        'CreateTdhocvanTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_094845_create_tdhocvan_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',

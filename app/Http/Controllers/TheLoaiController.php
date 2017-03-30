@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use app;
+use App\Theloai;
 
 class TheLoaiController extends Controller
 {
 	public function getDanhSach()
 	{
-		return view('admin.theloai.danhsach');
+		$theloai = Theloai::all();
+		return view('admin.theloai.danhsach',['theloai'=>$theloai]);
 	}
 
 	public function getThem()
