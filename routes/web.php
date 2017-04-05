@@ -32,11 +32,12 @@
 
   	Route::group(['prefix'=>'quanlyluong'], function(){
   		//admin/quanlyluong/danhsach
- 		Route::get('danhsach','QuanLyLuongController@getDanhSach');
+ 		Route::get('danhsach','LuongController@getDanhSach');
 
- 		Route::get('sua','QuanLyLuongController@getSua');
+ 		Route::get('sua','LuongController@getSua');
 
- 		Route::get('them','QuanLyLuongController@getThem');
+ 		Route::get('them','LuongController@getThem');
+    Route::post('them','LuongController@postThem');
   	});
 
   	Route::group(['prefix'=>'timkiemthongtin'], function(){

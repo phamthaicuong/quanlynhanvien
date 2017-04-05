@@ -19,10 +19,10 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quan ly luong<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="admin/quanlyluong/danhsach">Danh Sach</a>
+                        <a href="admin/luong/danhsach">Danh Sach</a>
                     </li>
                     <li>
-                        <a href="admin/quanlyluong/them">Bac luong</a>
+                        <a href="admin/luong/them">Bac luong</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
