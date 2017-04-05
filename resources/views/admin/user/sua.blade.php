@@ -48,21 +48,69 @@
                     <div class="form-group">
                         <label>Quyền người dùng</label>
                         <label class="radio-inline">
-                            <input name="quyen" value="1"  
-                             type="radio"  
+                            <input name="quyen" value="1"
+                             type="radio"
                                 @if($user->quyen == 0)
                                 {{"checked"}}
-                                @endif 
+                                @endif
                                 />Admin
                         </label>
                         <label class="radio-inline">
-                            <input name="quyen" value="0" type="radio" 
+                            <input name="quyen" value="0" type="radio"
                                 @if($user->quyen == 0)
                                 {{"checked"}}
                                 @endif
                                 />Thường
                         </label>
                     </div>
+                    <div class="form-group">
+                        <label>Dan Toc</label>
+                        <input class="form-control" name="DanToc" placeholder="" value="{{$user->DanToc}}" />
+                    </div>
+                    <div class="form-group">
+                        <label>Gioi Tinh</label>
+                        <label class="radio-inline">
+                            <input name="GioiTinh" value="1" type="radio"
+                                @if($user->quyen == 1)
+                                {{"checked"}}
+                                @endif
+                                />Nam
+                        </label>
+                        <label class="radio-inline">
+                            <input name="GioiTinh" value="0" type="radio"
+                                @if($user->quyen == 0)
+                                {{"checked"}}
+                                @endif
+                            />Nu
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Que Quan</label>
+                        <input class="form-control" name="QueQuan" placeholder="" value="{{$user->QueQuan}}"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Phong Ban</label>
+                        <input class="form-control" name="PhongBan" placeholder="" value="{{$user->PhongBan}}"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Muc Luong</label>
+                        <select class="form-control" name="MucLuong" value="{{$user->MucLuong}}" >
+                            <option value="0"></option>
+                            <option value="5tr->10tr">5tr->10tr</option>
+                            <option value="11tr->15tr">11tr->15tr</option>
+                            <option value="16tr->20tr">16tr->20tr</option>
+                            <option value="21tr->25tr">21tr->25tr</option>
+                            <option value="26tr->30tr">26tr->30tr</option>
+                            <option value="31tr->35tr">31tr->35tr</option>
+                            <option value="36tr->40tr">36tr->40tr</option>
+                            <option value="Tren 40tr">Tren 40tr</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Trinh Do Hoc Van</label>
+                        <input class="form-control" name="TDHocVan" placeholder="" value="{{$user->TDHocVan}}" />
+                    </div>
+
                     <button type="submit" class="btn btn-default">Sua</button>
                     <button type="reset" class="btn btn-default">Làm Mới</button>
                 <form>

@@ -15,7 +15,8 @@
                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                             <tr align="center">
-                                <th>Nhanvien</th>
+                                <th>ID</th>
+                                <th>Name</th>
                                 <th>Mucluong</th>
                                 <th>Luongthuong</th>
                                 <th>Thoigiannghi</th>
@@ -26,11 +27,12 @@
                         <tbody>
                             @foreach($quanlyluong as $qll)
                             <tr class="odd gradeX" align="center">
-                                <td>{{$qll->Nhanvien}}</td>
+                                <td>{{$qll->id}}</td>
+                                <td>{{$qll->name}}</td>
                                 <td>{{$qll->Mucluong}}</td>
-                                <td>{{$qll->Luongthuong}}</td>
+                                <td>{{$qll->HSLuong}}</td>
                                 <td>{{$qll->Thoigiannghi}}</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/quanlyluong/xoa"> Delete</a></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/quanlyluong/xoa/{{$qll->id}}"> Delete</a></td>
                                 <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/quanlyluong/sua/{{$qll->id}}">Edit</a></td>
                             </tr>
                             @endforeach

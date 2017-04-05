@@ -19,6 +19,7 @@ class CreateNhanvienTable extends Migration
             $table->string('HoTen');
             $table->string('GioiTinh');
             $table->dateTime('NgaySinh');
+            $table->string('DanToc');
             $table->string('DiaChi');
             $table->string('SDT');
             $table->string('QueQuan');

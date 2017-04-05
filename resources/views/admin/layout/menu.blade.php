@@ -13,31 +13,16 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quan ly ho so<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="admin/quanlyhoso/danhsach">Danh Sach</a>
-                    </li>
-                    <li>
-                        <a href="admin/quanlyhoso/them">Them Ho So</a>
-                    </li>
-                    <li>
-                        <a href="admin/quanlyhoso/sua">Chinh Sua Ho So</a>
-                    </li>
-                </ul>
-                <!-- /.nav-second-level -->
+                <a href="admin/user/danhsach"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quan ly luong<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="#">Tong luong</a>
+                        <a href="admin/quanlyluong/danhsach">Danh Sach</a>
                     </li>
                     <li>
-                        <a href="#">Bac luong</a>
+                        <a href="admin/quanlyluong/them">Bac luong</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
@@ -82,7 +67,7 @@
                         <a href="admin/user/them">Them</a>
                     </li>
                     <li>
-                        <a href="admin/user/sua">Sua</a>
+                        <a href="admin/user/danhsach">Sua</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

@@ -24,8 +24,10 @@
  		Route::get('danhsach','QuanLyHoSoController@getDanhSach');
  		
  		Route::get('sua','QuanLyHoSoController@getSua');
+    Route::post('sua','QuanLyHoSoController@getSua');
  		
  		Route::get('them','QuanLyHoSoController@getThem');
+    Route::post('them','QuanLyHoSoController@postThem');
   	});
 
   	Route::group(['prefix'=>'quanlyluong'], function(){

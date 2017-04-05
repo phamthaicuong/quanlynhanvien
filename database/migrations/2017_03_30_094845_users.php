@@ -20,6 +20,14 @@ class Users extends Migration
             $table->string('email');
             $table->string('password');
             $table->string('quyen');
+            $table->string('GioiTinh');
+            // $table->dateTime('NgaySinh');
+            $table->string('DanToc');
+            $table->string('SDT');
+            $table->string('QueQuan');
+            $table->string('MucLuong');
+            $table->string('PhongBan');
+            $table->string('TDHocVan');
             $table->rememberToken();
             $table->timestamps();
         });

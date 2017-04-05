@@ -45,6 +45,14 @@ class UserController extends Controller
 		$user->email = $request->email;
 		$user->password = bcrypt($request->password);
 		$user->quyen = $request->quyen;
+        // $user->NgaySinh = $request->NgaySinh;
+        $user->DanToc = $request->DanToc;
+        $user->GioiTinh = $request->GioiTinh;
+        $user->SDT = $request->SDT;
+        $user->QueQuan = $request->QueQuan;
+        $user->PhongBan = $request->PhongBan;
+        $user->MucLuong = $request->MucLuong;
+        $user->TDHocVan = $request->TDHocVan;
 		$user->save();
 
 		return redirect('admin/user/them')->with('thongbao','Them thanh cong');
@@ -68,6 +76,13 @@ class UserController extends Controller
 		$user = User::find($id);
 		$user->name = $request->name;
 		$user->quyen = $request->quyen;
+        $user->DanToc = $request->DanToc;
+        $user->GioiTinh = $request->GioiTinh;
+        $user->SDT = $request->SDT;
+        $user->QueQuan = $request->QueQuan;
+        $user->PhongBan = $request->PhongBan;
+        $user->MucLuong = $request->MucLuong;
+        $user->TDHocVan = $request->TDHocVan;
 
 
 		if($request->changePassword == "on")

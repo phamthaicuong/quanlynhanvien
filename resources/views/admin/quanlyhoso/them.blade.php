@@ -11,19 +11,33 @@
             </div>
             <!-- /.col-lg-12 -->
             <div class="col-lg-7" style="padding-bottom:120px">
-                <form action="" method="POST">
+            @if(count($errors) > 0)
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $err)
+                    {{$err}}</br>
+                    @endforeach
+                </div>
+            @endif
+
+            @if(session('thongbao'))
+                <div class="alert alert-success">
+                    {{session('thongbao')}}
+                </div>
+            @endif
+                <form action="admin/quanlyhoso/them" method="POST">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
                         <label>Vui Long Nhap Day Du Thong Tin</label>
                     </div>
                     <div class="form-group">
                         <label>Ho va Ten</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
+                        <input class="form-control" name="HoTen" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Sinh Ngay</label>
                         <div class="clearfix"></div>
                         <div class="col-xs-3">
-                            <select class="form-control" name="birthday">
+                            <select class="form-control" name="NgaySinh">
                                 <option value="0">Ngay</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -59,7 +73,7 @@
                             </select>
                         </div>
                         <div class="col-xs-3">
-                            <select class="form-control" name="month">
+                            <select class="form-control" name="NgaySinh">
                                 <option value="0">Thang</option>
                                 <option value="1">Thang 1</option>
                                 <option value="2">Thang 2</option>
@@ -76,7 +90,7 @@
                             </select>
                         </div>
                         <div class="col-xs-3">
-                            <select class="form-control" name="year">
+                            <select class="form-control" name="NgaySinh">
                                 <option value="0">Nam</option>
                                 <option value="1">1970</option>
                                 <option value="2">1971</option>
@@ -116,22 +130,22 @@
 
                     <div class="form-group">
                         <label>Dan Toc</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
+                        <input class="form-control" name="DanToc" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Gioi Tinh</label>
                         <label class="radio-inline">
-                            <input name="rdoStatus" value="1" checked="" type="radio">Nam
+                            <input name="GioiTinh" value="1" checked="" type="radio">Nam
                         </label>
                         <label class="radio-inline">
-                            <input name="rdoStatus" value="2" type="radio">Nu
+                            <input name="GioiTinh" value="2" type="radio">Nu
                         </label>
                     </div>
                     <div class="form-group">
                         <label>So Dien Thoai</label>
-                        <input class="form-control" name="txtCateName" placeholder="0123456789" />
+                        <input class="form-control" name="SDT" placeholder="0123456789" />
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="col-xs-4">
                             <label>So CMND</label>
                             <input class="form-control" name="txtCateName" placeholder="" />
@@ -144,24 +158,24 @@
                             <label>Ngay Cap</label>
                             <input class="form-control" name="txtCateName" placeholder="" />
                         </div>
-                    </div>
+                    </div> -->
                     <div class="clearfix">
                     </div>
                     <div class="form-group">
                         <label>Que Quan</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
+                        <input class="form-control" name="QueQuan" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Cho O Hien Tai</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
+                        <input class="form-control" name="DiaChi" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Phong Ban</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
+                        <input class="form-control" name="PhongBan" placeholder="" />
                     </div>
                     <div class="form-group">
                         <label>Muc Luong</label>
-                        <select class="form-control">
+                        <select class="form-control" name="MucLuong">
                             <option value="0"></option>
                             <option value="">5tr->10tr</option>
                             <option value="">11tr->15tr</option>
@@ -172,6 +186,11 @@
                             <option value="">36tr->40tr</option>
                             <option value="">Tren 40tr</option>
                         </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Trinh Do Hoc Van</label>
+                        <input class="form-control" name="TDHocVan" placeholder="" />
                     </div>
                     <button type="submit" class="btn btn-default">Them Vao</button>
                     <button type="reset" class="btn btn-default">Thu Lai</button>
