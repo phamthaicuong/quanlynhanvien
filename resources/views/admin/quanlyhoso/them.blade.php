@@ -13,10 +13,10 @@
             <div class="col-lg-7" style="padding-bottom:120px">
                 <form action="" method="POST">
                     <div class="form-group">
-                        <label>Vui long dien day du thong tin</label>
+                        <label>Vui Long Nhap Day Du Thong Tin</label>
                     </div>
                     <div class="form-group">
-                        <label>Ho va ten</label>
+                        <label>Ho va Ten</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
@@ -115,11 +115,11 @@
                     <div class="clearfix"></div>
 
                     <div class="form-group">
-                        <label>Dan toc</label>
+                        <label>Dan Toc</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Gioi tinh</label>
+                        <label>Gioi Tinh</label>
                         <label class="radio-inline">
                             <input name="rdoStatus" value="1" checked="" type="radio">Nam
                         </label>
@@ -132,23 +132,35 @@
                         <input class="form-control" name="txtCateName" placeholder="0123456789" />
                     </div>
                     <div class="form-group">
-                        <label>Que quan</label>
+                        <div class="col-xs-4">
+                            <label>So CMND</label>
+                            <input class="form-control" name="txtCateName" placeholder="" />
+                        </div>
+                        <div class="col-xs-4">
+                            <label>Noi Cap</label>
+                            <input class="form-control" name="txtCateName" placeholder="" />
+                        </div>
+                        <div class="col-xs-4">
+                            <label>Ngay Cap</label>
+                            <input class="form-control" name="txtCateName" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="form-group">
+                        <label>Que Quan</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Dia chi hien tai</label>
+                        <label>Cho O Hien Tai</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>So CMND</label>
+                        <label>Phong Ban</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Ma phong ban</label>
-                        <input class="form-control" name="txtCateName" placeholder="" />
-                    </div>
-                    <div class="form-group">
-                        <label>Muc luong</label>
+                        <label>Muc Luong</label>
                         <select class="form-control">
                             <option value="0"></option>
                             <option value="">5tr->10tr</option>

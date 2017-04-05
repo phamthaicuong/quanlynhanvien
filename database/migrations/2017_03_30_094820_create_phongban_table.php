@@ -16,10 +16,10 @@ class CreatePhongbanTable extends Migration
         Schema::create('phongban', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('MaPB');
-            $table->string('TenPB');
-            $table->string('DiaChiPB');
-            $table->string('SDTPB');
+            $table->string('MaPB',255);
+            $table->string('TenPB',255);
+            $table->string('DiaChiPB',255);
+            $table->string('SDTPB',255);
             $table->timestamps();
         });
     }

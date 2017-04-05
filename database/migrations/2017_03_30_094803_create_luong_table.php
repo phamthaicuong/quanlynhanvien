@@ -16,9 +16,9 @@ class CreateLuongTable extends Migration
         Schema::create('luong', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('BacLuong');
-            $table->string('HSLuong');
-            $table->string('PhuCap');
+            $table->string('BacLuong',255);
+            $table->string('HSLuong',255);
+            $table->string('PhuCap',255);
             $table->timestamps();
         });
     }

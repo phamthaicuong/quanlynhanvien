@@ -7,29 +7,36 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Category
-                            <small>List</small>
+                        <h1 class="page-header">User
+                            <small>Thêm</small>
                         </h1>
                     </div>
                     <!-- /.col-lg-12 -->
                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                             <tr align="center">
-                                <th>HoTen</th>
+                                <th>ID</th>
                                 <th>Name</th>
+                                <th>Email</th>
+                                <th>Quyen</th>
                                 <th>Delete</th>
                                 <th>Edit</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach('$user as $us')
+                            @foreach($user as $u)
                             <tr class="odd gradeX" align="center">
-                                <td>{{$us->HoTen}}</td>
-                                <td>{{$us->Name}}</td>
-                                <td>{{$us->ID}}</td>
-                                <td>{{$us->ID}}</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/xoa"> Delete</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/sua/{{$us->id}}">Edit</a></td>
+                                <td>{{$u->id}}</td>
+                                <td>{{$u->name}}</td>
+                                <td>{{$u->email}}</td>
+                                <td>{{$u->quyen}}</td>
+                                    @if($u->quyen == 1)
+                                    {{"Admin"}}
+                                    @else
+                                    {{"Thường"}}
+                                    @endif
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/xoa/{{$u->id}}"> Xóa</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/sua/{{$u->id}}"> Sửa</a></td>
                             </tr>
                             @endforeach
                         </tbody>

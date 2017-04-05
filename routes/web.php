@@ -50,9 +50,13 @@
   		//admin/user/danhsach
  		Route::get('danhsach','UserController@getDanhSach');
 
- 		Route::get('sua','UserController@getSua');
+ 		Route::get('sua/{id}','UserController@getSua');
+    Route::post('sua/{id}','UserController@postSua');
 
  		Route::get('them','UserController@getThem');
+    Route::post('them','UserController@postThem');
+
+    Route::get('xoa/{id}','UserController@getXoa');
   	});
 
   	Route::group(['prefix'=>'baocao'], function(){

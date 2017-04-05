@@ -14,10 +14,10 @@
             <div class="col-lg-7" style="padding-bottom:120px">
                 <form action="" method="POST">
                     <div class="form-group">
-                        <label>Vui long dien thong tin</label>
+                        <label>Vui Long Dien Thong Tin</label>
                     </div>
                     <div class="form-group">
-                        <label>Ho va ten</label>
+                        <label>Ho va Ten</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
@@ -116,11 +116,11 @@
                     <div class="clearfix"></div>
 
                     <div class="form-group">
-                        <label>Dan toc</label>
+                        <label>Dan Toc</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Gioi tinh</label>
+                        <label>Gioi Tinh</label>
                         <label class="radio-inline">
                             <input name="rdoStatus" value="1" checked="" type="radio">Nam
                         </label>
@@ -133,11 +133,11 @@
                         <input class="form-control" name="txtCateName" placeholder="0123456789" />
                     </div>
                     <div class="form-group">
-                        <label>Que quan</label>
+                        <label>Que Quan</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Dia chi hien tai</label>
+                        <label>Cho O Hien Tai</label>
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
@@ -149,7 +149,7 @@
                         <input class="form-control" name="txtCateName" placeholder="" />
                     </div>
                     <div class="form-group">
-                        <label>Muc luong</label>
+                        <label>Muc Luong</label>
                         <select class="form-control">
                             <option value="0"></option>
                             <option value="">5tr->10tr</option>
